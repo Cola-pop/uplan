@@ -1,7 +1,9 @@
 #Project for software engineering
 
-*app.js*
-*package.json*
+...
+app.js
+package.json
+...
 
 #models: used for mongodb
 	.pictures.js*
