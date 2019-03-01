@@ -1,0 +1,33 @@
+<%include partials/header%>
+<link rel="stylesheet" type="text/css" href="/stylesheets/home.css">
+
+<div class="container customize-prof">
+	<h1 style="text-align: center;">Customize your profile</h1>
+	<div style="width: 30%; margin: 25px auto;">
+		<form action="/profile/<%=user._id%>?_method=PUT" method="POST">
+				<!-- <div class="form-group">
+					<input class="form-control" type="file" name="user[img]" enctype="multipart/form-data" placeholder="Profile Picture">
+				</div> -->
+				<div class="form-group">
+					<input class="form-control" type="text" name="user[phone]" placeholder="Phone" value="<%=user.phone%>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="user[email]" placeholder="E-mail" value="<%=user.email%>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="user[location]" placeholder="Location" value="<%=user.location%>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="user[desc]" placeholder="Description" value="<%=user.desc%>">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-lg btn-primary btn-block">Submit!</button>
+				</div>
+			</form>
+			<div style=""><a class="btn btn-warning btn-lg" href="/profile/<%=currentUser._id%>/newpic">Change Profile Picture</a></div>
+			<br>
+			<a href="/home">Go back</a>
+		</div>
+	</div>
+
+	<%include partials/footer%>

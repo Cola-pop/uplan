@@ -1,0 +1,166 @@
+html{
+	height: 100%;
+}
+
+body{
+	/*background-color: #85144b;*/
+}
+
+.dark-trans{
+	background-color: rgba(52, 58, 64, 0.5);
+}
+.color-grey{
+	background-color: rgba(35, 35, 35, 0.75);
+	border-color: #232323;
+	color: #9D9D9D;
+}
+#modal-login{
+	/*border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;*/
+	border-radius: 30px;
+	background-color: #333333;
+	border-bottom: 2px solid #007BFF;
+	color: #9D9D9D;
+}
+#login-close{
+	padding-top: 0px;
+	border-top: 1px solid #232323;
+}
+#button-white{
+	color: white;
+}
+
+#button-white-two{
+	color: white;
+}
+
+li{
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	outline: none;
+}
+
+#sign-out{
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	outline: none;
+}
+
+#brand-name{
+	padding-right: 5px;
+	border-right: 1px solid #007BFF;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#search{
+	color: #007BFF;
+	border-color: #007BFF;
+}
+
+#search:hover{
+	background-color: #007BFF;
+	color: white;
+}
+
+#top-container{
+	padding-top: 30px;
+}
+
+#top-jumbo{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	/*background-color: rgb(240, 230, 140, 0.8);*/
+	border-radius: 15px;
+}
+
+	.carousel-inner img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.carousel-text{
+		text-shadow: 0px 4px 3px rgba(0,0,0,1),
+		0px 8px 13px rgba(0,0,0,1),
+		0px 18px 23px rgba(0,0,0,1);
+		color: #FFF8DC;
+		font-style: italic;
+	}
+
+	.dark-trans{
+		background-color: rgba(52, 58, 64, 0.5);
+	}
+
+	.agenda {  }
+
+	/* Dates */
+	.agenda .agenda-date { 
+		width: 170px; 
+	}
+
+	.agenda .agenda-date .dayofmonth{
+		width: 40px;
+		font-size: 36px;
+		line-height: 36px;
+		float: left;
+		text-align: right;
+		margin-right: 10px; 
+	}
+	.agenda .agenda-date .shortdate{
+		font-size: 0.75em; 
+	}
+
+
+	/* Times */
+	.agenda .agenda-time{ 
+		width: 140px; 
+	} 
+
+
+	/* Events */
+	.agenda .agenda-events{} 
+	.agenda .agenda-events .agenda-event{} 
+
+	@media (max-width: 767px) {
+
+	}
+
+	@media (max-width:575px) {
+    .display-4 {
+        font-size: 1.5rem;
+    }
+    .day h5 {
+        background-color: #f8f9fa;
+        padding: 3px 5px 5px;
+        margin: -8px -8px 8px -8px;
+    }
+    .date {
+        padding-left: 4px;
+    }
+}
+
+@media (min-width: 576px) {
+    .day {
+        height: 14.2857vw;
+    }
+}
+
+.customize-prof{
+	padding-top: 5%;
+}
