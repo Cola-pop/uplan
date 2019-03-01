@@ -1,15 +1,15 @@
-#Project for software engineering#
+#Project for software engineering
 
 *app.js*
 *package.json*
 
-#models: used for mongodb#
-	*pictures.js*
-	*task.js*
-	*types.js*
-	*user.js*
+#models: used for mongodb
+	.pictures.js*
+	.task.js*
+	.types.js*
+	.user.js*
 
-#public: mainly stylesheets#
+#public: mainly stylesheets
 	#bootstrap#
 	#pictures#
 	#sylesheets#
@@ -19,16 +19,16 @@
 		*photography.css*
 		*profile.css*
 
-#routes#
+#routes
 	*catagories.js*
 	*home.js*
 	*index.js*
 	*list.js*
 	*profiles.js*
 
-#uploads: dead folder#
+#uploads: dead folder
 
-#views: main markup files#
+#views: main markup files
 	#partials: header and footer#
 		*footer.ejs*
 		*header.ejs*
