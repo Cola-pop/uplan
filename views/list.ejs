@@ -3,26 +3,26 @@
 
 <h1><%=type%></h1>
 <div class="container" id="main-container">
-
+	
 	<% user.forEach(function(user){ %>
-	<div class="container item">
-		<div class=row>
-			<div class="col-s-6 col-m-4 images">
-				<div class="thumbnail">
-					<img src="/pictures/default.png">
+		<div class="container item">
+			<div class=row>
+				<div class="col-s-6 col-m-4 images">
+					<div class="thumbnail">
+						<img src="/pictures/default.png">
+					</div>
+				</div>
+				<div class="col-s-12">
+					<span class="type-ph"><%=user.type%></span>
+					<br>
+					<span class="name"><a href="/profile/<%= user._id %>" style="text-decoration: none; color: #007BFF;"><%=user.fname%> <%=user.lname%></a></span>
+					<br>
+					<span class="type-ph"><%=user.desc%></span>
 				</div>
 			</div>
-			<div class="col-s-12">
-				<span class="type-ph"><%=user.type%></span>
-				<br>
-				<span class="name"><a href="/profile/<%= user._id %>" style="text-decoration: none; color: #007BFF;"><%=user.fname%> <%=user.lname%></a></span>
-				<br>
-				<span class="type-ph"><%=user.desc%></span>
-			</div>
 		</div>
+		<hr>
+		<%})%>
 	</div>
-	<hr>
-	<%})%>
-</div>
-
-<%include partials/footer%>
+	
+	<%include partials/footer%>

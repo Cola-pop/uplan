@@ -7,7 +7,7 @@ var taskSchema = new mongoose.Schema({
 	checked: Boolean,
 	finished: Boolean,
 	users: [{type: mongoose.Schema.Types.ObjectId, ref: 'Task'}]
-
+	
 });
 
 module.exports = mongoose.model("Task", taskSchema);

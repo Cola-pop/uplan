@@ -15,79 +15,79 @@
 			<ul>
 				<li>Email: <%=user.email%></li>
 				<%if(user.phone){%>
-				<li>Phone: +961 <%=user.phone%></li>
+					<li>Phone: +961 <%=user.phone%></li>
+					<%}%>
+					<%if(user.location){%>
+						<li>Location: <%=user.location%></li>
+						<%}%>
+					</ul>
+					<a class="btn btn-warning btn-md" href="/profile/<%=currentUser._id%>/edit">Edit Profile</a>
+				</div>
+				<%if(user.desc){%>
+					<div class="col-lg-5">
+						<p>
+							<em style="font-size: 25px;">Description</em>
+							<br>
+							<%-user.desc%>
+						</p>
+					</div>
+					<%}%>
+				</div>
+			</div>
+			<hr>
+			
+			<!-- Photo gallery -->
+			<%if(user.username=="hrag"){%>
+				<div class="container" id="gallery">
+					<em style="font-size: 25px;">Gallery</em>
+					<div class="row">
+						<div class="col-lg-4 col-sm-6 images">
+							<div class="thumbnail">
+								<img src="/pictures/test0.jpg">
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 images">
+							<div class="thumbnail">
+								<img src="/pictures/test1.jpg">
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 images">
+							<div class="thumbnail">
+								<img src="/pictures/test2.jpg">
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 images">
+							<div class="thumbnail">
+								<img src="/pictures/test3.jpg">
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 images">
+							<div class="thumbnail">
+								<img src="/pictures/test4.jpg">
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 images">
+							<div class="thumbnail">
+								<img src="/pictures/test5.JPG">
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 images">
+							<div class="thumbnail">
+								<img src="/pictures/test6.jpg">
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 images">
+							<div class="thumbnail">
+								<img src="/pictures/test7.jpg">
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 images">
+							<div class="thumbnail">
+								<img src="/pictures/test8.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
 				<%}%>
-				<%if(user.location){%>
-				<li>Location: <%=user.location%></li>
-				<%}%>
-			</ul>
-			<a class="btn btn-warning btn-md" href="/profile/<%=currentUser._id%>/edit">Edit Profile</a>
-		</div>
-		<%if(user.desc){%>
-		<div class="col-lg-5">
-			<p>
-				<em style="font-size: 25px;">Description</em>
-				<br>
-				<%-user.desc%>
-			</p>
-		</div>
-		<%}%>
-	</div>
-</div>
-<hr>
-
-<!-- Photo gallery -->
-<%if(user.username=="hrag"){%>
-<div class="container" id="gallery">
-	<em style="font-size: 25px;">Gallery</em>
-	<div class="row">
-		<div class="col-lg-4 col-sm-6 images">
-			<div class="thumbnail">
-				<img src="/pictures/test0.jpg">
-			</div>
-		</div>
-		<div class="col-lg-4 col-sm-6 images">
-			<div class="thumbnail">
-				<img src="/pictures/test1.jpg">
-			</div>
-		</div>
-		<div class="col-lg-4 col-sm-6 images">
-			<div class="thumbnail">
-				<img src="/pictures/test2.jpg">
-			</div>
-		</div>
-		<div class="col-lg-4 col-sm-6 images">
-			<div class="thumbnail">
-				<img src="/pictures/test3.jpg">
-			</div>
-		</div>
-		<div class="col-lg-4 col-sm-6 images">
-			<div class="thumbnail">
-				<img src="/pictures/test4.jpg">
-			</div>
-		</div>
-		<div class="col-lg-4 col-sm-6 images">
-			<div class="thumbnail">
-				<img src="/pictures/test5.JPG">
-			</div>
-		</div>
-		<div class="col-lg-4 col-sm-6 images">
-			<div class="thumbnail">
-				<img src="/pictures/test6.jpg">
-			</div>
-		</div>
-		<div class="col-lg-4 col-sm-6 images">
-			<div class="thumbnail">
-				<img src="/pictures/test7.jpg">
-			</div>
-		</div>
-		<div class="col-lg-4 col-sm-6 images">
-			<div class="thumbnail">
-				<img src="/pictures/test8.jpg">
-			</div>
-		</div>
-	</div>
-</div>
-<%}%>
-
-<%include partials/footer%>
+				
+				<%include partials/footer%>
